@@ -1,5 +1,5 @@
 *{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Baskervville', sans-serif;
     font-size: 16px;
     color: #222;
 }
@@ -7,9 +7,12 @@ html, body{
     margin: 0;
     height: 100vh;
     text-align: center;
+    background-color: #f2eae4;
+    /* background-color: #494c3d; */
+
 }
 .header{
-    background-image: url(./img/hero.jpeg);
+    background-image: linear-gradient(transparent 50%, #f2eae4 99%), url(./img/hero.jpeg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
     background-attachment: scroll;
@@ -19,17 +22,23 @@ html, body{
     padding-top: 60vh;
 }
 .heading {
-    color: #ffffff;
+    /* color: #8e5144; */
+    color: #bc4a23;
     display: block;
-    font-family: 'Caveat', cursive;
-    font-size: 6em;
+    font-family: 'Bodoni Moda', cursive;
+    font-size: 5em;
     font-weight: normal;
-    text-shadow: 0 0 10px #000;
+    letter-spacing: 12px;
+    padding-top: 80px;
+
+
+    /* text-shadow: 0 0 10px #000; */
+
 }
 .heading-subtext{
-    color: #fff;
+    /* color: #8e5144; */
     display: block;
-    font-family: 'Caveat', cursive;
+    font-family: 'Bodoni Moda', cursive;
     font-size: .6em;
 }
 .fixed-button{
@@ -62,9 +71,15 @@ html, body{
     max-width: 600px;
     padding: 1em 2.4em;
 }
+.section-green{
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 1em 2.4em;
+    background: #494c3d;
+}
 .sub-heading{
-    font-family: 'Caveat', cursive;
-    font-size: 3em;
+    font-family: 'Bodoni Moda', cursive;
+    font-size: 2.5em;
     margin-top: 2em;
 }
 .details{
@@ -76,11 +91,42 @@ html, body{
 }
 .fas {
     font-size: 3em;
-    opacity: .8;
+    /* opacity: .8; */
+    color: #494c3d;
 }
 .resort-image{
     width: 100%
 }
+.olive-image{
+    margin-top: 50px;
+    width: 20%
+}
+.dot-orange {
+    height: 20px;
+    width: 20px;
+    background-color: #bc4a23;
+    border-radius: 50%;
+    display: inline-block;
+  }
+.dot-green {
+    height: 20px;
+    width: 20px;
+    background-color: #494c3d;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .dot-beige {
+    height: 20px;
+    width: 20px;
+    background-color: #c1755b;
+    border-radius: 50%;
+    display: inline-block;
+  }
+/* Solid border */
+hr.solid {
+    border-top: 3px solid #bc4a23;
+
+  }
 
 @media only screen and (max-width: 600px) {
     .heading {
