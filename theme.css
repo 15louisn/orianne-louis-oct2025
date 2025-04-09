@@ -26,7 +26,7 @@ html, body{
     color: #bc4a23;
     display: block;
     font-family: 'Bodoni Moda', cursive;
-    font-size: 5em;
+    font-size: 4.7em;
     font-weight: normal;
     letter-spacing: 12px;
     padding-top: 80px;
@@ -99,7 +99,7 @@ html, body{
 }
 .olive-image{
     margin-top: 50px;
-    width: 20%
+    width: 50%
 }
 .dot-orange {
     height: 20px;
