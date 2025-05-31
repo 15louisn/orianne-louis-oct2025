@@ -8,6 +8,14 @@
     <link href="https://fonts.googleapis.com/css?family=Bodoni+Moda|Baskervville&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .agenda-section {
+        display: none;
+      }
+      .agenda-section.active {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -60,22 +68,53 @@
         <i class="fas fa-place-of-worship"></i>
         <h3 class="details-heading">Ceremony  - Cérémonie</h3>
         <p> 13h - 14h </p>
+        <p> As part of the ceremony, we would be delighted if you could bring a picture of yourself and (either one of) us, or any other token linking us together should you have any. </p>
+        <p> Dans le cadre de la cérémonie, nous serions ravis si vous ammeniez avec vous une photo de vous et (l'un d'entre) nous, ou tout autre symbol qui nous relie que vous auriez à disposition. </p>
+
       </div>
-      <div class="details">
+      <div id="reception" class="agenda-section">
         <i class="fas fa-champagne-glasses"></i>
         <h3 class="details-heading">Reception - Réception</h3>
         <p> 15h - 17h </p>
       </div>
-      <div class="details">
+      <div id="dinner" class="agenda-section">
+        <i class="fas fa-champagne-glasses"></i>
+        <h3 class="details-heading">Reception - Réception</h3>
+        <p> 15h - 17h </p>
+      </div>
+      <div id="dinner" class="agenda-section">
         <i class="fas fa-utensils"></i>
         <h3 class="details-heading">Dinner - Souper</h3>
         <p> 18h - 21h </p>
       </div>
-      <div class="details">
+      <div id="party" class="agenda-section">
         <i class="fas fa-bolt"></i>
         <h3 class="details-heading">Party - Soirée</h3>
         <p> 21h - ??? </p>
      </div>
+     <div id="dinner" class="agenda-section">
+      <i class="fas fa-bolt"></i>
+      <h3 class="details-heading">Party - Soirée</h3>
+      <p> 21h - ??? </p>
+    </div>
+    <div id="party" class="agenda-section">
+      <i class="fas fa-bed"></i>
+      <h3 class="details-heading">Sleeping - Dormir</h3>
+      <p> To avoid that you get back on the road in sub optimal conditions, areas will be made available for you to spend the night at the venue. Please come with a mattress for your own comfort.</p>
+      <p> Pour vous éviter de devoir reprendre la route si vous n'êtes pas en moyen de le faire, des salles seront mises à dispositions pour ceux souhaitans dormir sur place. Veuillez donc prévoir des matelats ou des lits de camps pour votre propre comfort.</p>
+    </div>
+    <div id="dinner" class="agenda-section">
+      <i class="fas fa-bed"></i>
+      <h3 class="details-heading">Sleeping - Dormir</h3>
+      <p> To avoid that you get back on the road in sub optimal conditions, areas will be made available for you to spend the night at the venue. Please come with a mattress for your own comfort.</p>
+      <p> Pour vous éviter de devoir reprendre la route si vous n'êtes pas en moyen de le faire, des salles seront mises à dispositions pour ceux souhaitans dormir sur place. Veuillez donc prévoir des matelats ou des lits de camps pour votre propre comfort.</p>
+    </div>
+    <div class="details">
+      <i class="fas fa-person-through-window"></i>
+      <h3 class="details-heading">Your Exit - Votre Sortie</h3>
+      <p> Do not worry about saying goodbye, enjoy your day to the fullest and leave whenever it suits you! </p>
+      <p> Pas besoin de venir nous dire au revoir, profitez de cette journée avec nous et rentrez chez vous dés que cela vous arrange! </p>
+    </div>
 
     </section>
       <section class="section">
@@ -84,7 +123,7 @@
       <div class="details">
         <i class="fas fa-gifts"></i>
         <h3 class="details-heading">Wedding Registry - Liste de Marriage</h3>
-        <p>Your presence is what matters most to us. If you would like to give a gift, we've created a registry below for items for our married life together and our Japan honeymoon. </p>
+        <p>Your presence is what matters most to us. If you would like to give a gift, we've created a registry below for items for our married life together and our honeymoon in Japan. </p>
         <!-- <p>✨</p> -->
         <span class="dot-beige"></span>
 
@@ -93,20 +132,26 @@
         </a>
       </div>
       <div class="details">
-        <i class="fas fa-reply"></i>
-        <h3 class="details-heading" id="rsvp">RSVP</h3>
-        <p>[Embed your RSVP form here]</p>
+        <i class="fas fa-camera"></i>
+        <h3 class="details-heading" id="pictures">Pictures</h3>
+        <p> Lend our photographer a hand and send us your pictures: [ADD QR CODE].</p>
+        <p> Donner un coup de main à notre photographe et partagez avec nous vos photos: [ADD QR CODE].</p>
+
         <!-- Include Embedded link of Google Form here in place of # -->
         <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
       </div>
-      <div style="position: relative; height:100vh; max-height:100vh; overflow:auto;">
-        <iframe
-          src="https://app.formbricks.com/s/<your-surveyId>"
-          frameborder="0"
-          style="position: absolute; left:0; top:0; width:100%; height:100%; border:0;"
-        >
-        </iframe>
+      <div class="details">
+        <i class="fas fa-reply"></i>
+        <h3 class="details-heading" id="rsvp">RSVP</h3>
+        <p> Please confirm your presence before <b>Saturday 12/09/2025</b> using the address email below or by post to the address below. We invite you to indicate who among the invited are attending, which parts of the wedding you plan to attend and any dierary restrictions you may have.</p>
+        <span class="dot-orange"></span>
+        <p> Veuillez confirmer votre présence avant le <b>Samedi 12/09/2025</b> via l'adresse email ci-dessous ou par courrier à l'adresse ci-dessous. Nous vous invitons à indiquer à quelle partie de la journée vous participerez, qui parmit les invités sera présent ainsi que toute restriction alimentaire que vous auriez.</p>
+        <a href="mailto:O-L-4oct2025@outlook.com">O-L-4oct2025@outlook.com</a>
+        <p> <i>Orianne de la Brassinne Bonardeaux et Louis Nelissen, Rue des Augustins 17, 4000 Liège, Belgique</i></p>
+        <!-- Include Embedded link of Google Form here in place of # -->
+        <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
       </div>
+
     </section>
     <script src="./js/smooth-scroll.polyfills.min.js"></script>
     <script defer>

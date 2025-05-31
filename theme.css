@@ -85,6 +85,9 @@ html, body{
 .details{
     margin: 0 auto 8em;
 }
+.agenda-section{
+    margin: 0 auto 8em;
+}
 .details-heading{
     font-weight: bold;
     text-transform: uppercase;
