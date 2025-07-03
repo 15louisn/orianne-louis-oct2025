@@ -95,14 +95,19 @@ html, body{
 .fas {
     font-size: 3em;
     /* opacity: .8; */
-    color: #494c3d;
+    color: #2e413e;
 }
 .resort-image{
     width: 100%
 }
 .olive-image{
-    margin-top: 50px;
+    margin-bottom: 40px;
     width: 50%
+}
+.olive-image-small{
+   /* margin-top: 10px;*/
+    margin-bottom: 70px;
+    width: 20%
 }
 .dot-orange {
     height: 20px;
