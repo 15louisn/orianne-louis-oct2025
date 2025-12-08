@@ -21,6 +21,16 @@ html, body{
     margin: 0;
     padding-top: 60vh;
 }
+.header2{
+    background-image: linear-gradient(transparent 50%, #f2eae4 99%), url(./img/hero3.jpeg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 40vh;
+    margin: 0;
+    padding-top: 60vh;
+}
 .heading {
     /* color: #8e5144; */
     color: #bc4a23;
